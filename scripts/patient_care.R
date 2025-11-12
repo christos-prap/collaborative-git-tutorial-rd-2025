@@ -10,7 +10,7 @@ care_small <- cms_patient_care |>
 
 care_small
 
-ggplot(care_small, aes(score, measure_name, fill = hsopital_name)) +
+ggplot(care_small, aes(score, measure_abbr, fill = facility_name)) +
   geom_col(position = 'dodge') +
   theme_minimal() +
   labs(
